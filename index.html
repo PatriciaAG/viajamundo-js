@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ViajaMundo</title>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0"/>
+        <style>
+            /*Agregar código CSS*/
+        </style>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav-principal">
+            <nav class="nav-header">
+                <a href="#" id="logo-ref">
+                    <img src="assets/images/logo.png" 
+                         class="logo-img"/>
+                    <span class="logo-title-white roboto-regular">Viaja</span>
+                    <span class="logo-title-yellow roboto-regular">Mundo</span>
+                </a>
+                <!-- Agregando menús -->
+                <ul class="nav-header_menu">
+                    <li class="nav-header_menu__item">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="nav-header_menu__item">
+                        <a href="servicios.html" >Servicios</a>
+                    </li>
+                    <li class="nav-header_menu__item">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section id="banner-principal">
+
+        </section>
+        
+        <!--Agregar el banner-->
+        <section id="about-us">
+            <h2 class="montserrat-title">Sobre Nosotros</h2>
+            <p class="montserrat-content">
+                En ViajaMundo no apasiona crear experiencias de viajes inolvidables,
+                con destinos nacionales e internacionales.
+            </p>
+            <p class="montserrat-content">
+                Contamos con un equipo de asesores especializados que te ayudan a
+                planificar el ciaje ideal, según tus gustos y presupuesto.
+            </p>
+            <p class="montserrat-content">
+                Nuestro objetivo es que descubras el mundo de forma segura,
+                cómoda y con el mejor servicio.
+            </p>
+        </section>
+        <section id="services">
+            <h2 class="montserrat-title">Nuestros servicios</h2>
+            <div class="service-items"  id="service-items">
+                <!--<div class="service-item-card">
+                    <div class="service-item-card_info">
+                        <img src=""/>
+                        <h3>Vuelos</h3>
+                        <p>Nacionales e <br/> Internacionales</p>
+                    </div>
+                </div>
+                <div class="service-item-card">
+                    <div class="service-item-card_info">
+                        <img src=""/>
+                        <h3>Hospedaje</h3>
+                        <p>Hoteles y <br/> resorts</p>
+                    </div>
+                </div>
+                <div class="service-item-card">
+                    <div class="service-item-card_info">
+                        <img src=""/>
+                        <h3>Tours</h3>
+                        <p>Excursiones <br/> guiadas</p>
+                    </div>
+                </div>
+                <div class="service-item-card">
+                    <div class="service-item-card_info">
+                        <img src=""/>
+                        <h3>Paquetes</h3>
+                        <p>Viajes <br/> completos</p>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="contact-title montserrat-title">Contáctanos</h2>
+            <div class="contact-info">
+                <div class="contact-info_data">
+                    <ul>
+                        <li>
+                            <a href="#"> 
+                                <img/>
+                                <span>+591 708-12345</span>
+                            </a>
+                            <a href="#"> 
+                                <img/>
+                                <span>Dirección</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-info_cta">
+                    <!--Botón solicita tu cotización -->
+                    <button (onclick)="alert('cotizar')" class="boton">Solicita tu cotización</button>
+                    <a></a>
+                </div>
+            </div>
+        </section>
+        <script src="js/api.js"></script>
+        <script src="js/servicios.js"></script>
+    </body>
+</html>

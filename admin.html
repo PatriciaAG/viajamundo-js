@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar servicios - ViajaMundo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="admin-header">
+        <div class="admin-header-content">
+            <h1>ViajaMundo</h1>
+            <a href="index.html">Volver al sitio</a>
+        </div>
+    </header>
+
+    <main class="admin-container">
+
+        <section class="admin-form-section">
+            <h2 id="form-title">Registrar servicio</h2>
+
+            <form id="form-servicio">
+
+                <input type="hidden" id="id_servicio">
+
+                <div class="admin-form-grid">
+
+                    <div class="form-group">
+                        <label for="servicios_nombre">Nombre del servicio</label>
+                        <input type="text" id="servicios_nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicios_precio_unitario">Precio unitario</label>
+                        <input type="number"
+                               id="servicios_precio_unitario"
+                               min="0"
+                               step="0.01"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_servicio_tipo">Tipo de servicio</label>
+                        <select id="id_servicio_tipo" required>
+                            <option value="">Seleccionar tipo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicios_imagen">Imagen</label>
+                        <input type="text"
+                               id="servicios_imagen"
+                               placeholder="diagnostico.png">
+                    </div>
+
+                    <div class="form-group admin-description">
+                        <label for="servicios_descripcion">Descripción</label>
+                        <textarea id="servicios_descripcion"
+                                  rows="4"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="admin-buttons">
+                    <button type="submit" id="btn-guardar">
+                        Guardar servicio
+                    </button>
+
+                    <button type="button"
+                            id="btn-cancelar"
+                            class="btn-secondary"
+                            hidden>
+                        Cancelar edición
+                    </button>
+                </div>
+
+                <div id="mensaje-form"></div>
+
+            </form>
+        </section>
+
+        <section class="admin-list-section">
+
+            <div class="admin-list-header">
+                <h2>Servicios registrados</h2>
+
+                <button type="button" id="btn-recargar" class="btn-secondary">
+                    Recargar
+                </button>
+            </div>
+
+            <div class="admin-table-container">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Servicio</th>
+                            <th>Precio</th>
+                            <th>Tipo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-servicios">
+                        <tr>
+                            <td colspan="5">Cargando servicios...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

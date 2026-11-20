@@ -1,0 +1,8 @@
+services:
+  php:
+    build: .
+    container_name: practica-css
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html

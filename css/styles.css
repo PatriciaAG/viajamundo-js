@@ -1,0 +1,220 @@
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+} 
+.montserrat-content {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+} 
+/*Selector Universal*/
+*{
+    /*padding: 5px 0px 5px 0px;*/
+}
+/*Selector por etiqueta*/
+body {
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+}
+h2 {
+    font-weight: 700px;
+    font-size: 21px;
+    margin-left: 20px;
+    color:#09097b;
+}
+p {
+
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    /*Selector por clase*/
+    .nav-principal{
+        display: block;
+        width: 100%;
+        background-color: #09097b;
+        position:relative;
+    }
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+            width: 90%;
+            margin: auto;
+
+        }
+        /*Selector por ID*/
+        #logo-ref {
+            width:100px;
+            height:auto;
+            text-decoration:none;
+            text-transform: uppercase;
+            display: inline-flex;
+            justify-content: flex-start;
+            text-align: left;
+            vertical-align: center;
+        }
+            .logo-img{
+                width:50px;
+                float:left;
+            }
+            .logo-title-white, .logo-title-yellow {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .logo-title-white {
+                color: white;
+            }
+            .logo-title-yellow {
+                color:yellow;
+            }
+        .nav-header_menu {
+            display:flex;
+            justify-content: right;
+            align-items: right;
+            gap: 20px;
+            list-style: none;
+        }
+            .nav-header_menu li a {
+                color: white;
+                font-size:14px;
+                text-decoration: none;
+            }
+        #logo-ref span {
+            padding-top: 16px;
+            font-size: 16px;
+        }
+    #banner-principal {
+        background-image: url('../assets/images/banner.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+    }
+/*Selector descendiente*/
+section p {
+    font-size: 12px;
+}
+/*Selector de agrupación*/
+button {
+    background-color: yellow;
+    color: blue;
+    text-decoration: none;
+    padding: 7px 20px 7px 20px;
+    border-radius: 8px;
+}
+#about-us {
+    padding: 40px 5%;
+}
+    #about-us h2 {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    #about-us p {
+        font-size: 18px;
+    }
+
+#services {
+    display: block;
+    background-color: lightcyan;
+    padding: 40px 5%;
+}
+    .service-items {
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+        .service-item-card {
+            background-color: white;
+            color:#09097b;
+            border-radius: 15px;
+            padding: 10px 15px 10px 15px;
+            width: 15%;
+            height: auto;
+            text-align: center;
+        }
+        .service-item-card_info img {
+            width: 100%;
+        }
+        .price {
+            color: rgb(247, 207, 3);
+            font-size: 20px;
+            font-weight: 700;
+        }
+#contact {
+    background-color: #09097b;
+    padding: 40px 5%;
+}
+    .contact-title{
+        color: #fff;
+        font-size: 30px;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+    }
+        .contact-info_data {
+            width: 50%;
+        }
+.boton {
+    transition-property: background-color 0.2s easy;
+}
+.boton:hover {
+    background-color: #09097b;
+    color: yellow;
+}
+
+/*Versión responsive*/
+@media(max-width: 570px) {
+    .nav-principal {
+        background-color: yellow;
+    }
+    .service-items {
+        display: inline-block;
+        /*display: block;*/
+        width: 100%;
+    }
+    .service-item-card {
+        display:block;
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #services {
+
+        background-color: grey;
+    }
+    .contact-info {
+        display: inline-block;
+        overflow: hidden;
+        width: 80%;
+    }
+        .contact-info_data {
+            display: block;
+            width: 50%;
+            float: left;
+        }
+        .contact-info_cta {
+            display: block;
+            width: 50%;
+            float: right;
+        }
+}
+
+
+
+
